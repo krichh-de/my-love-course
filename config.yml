@@ -1,0 +1,18 @@
+title: my love
+description: >-
+  i am going to create new repository in this platform , I am very excited .
+  thanku IBM  and Thanku
+template:
+  repo: my-love-template
+  name: my-love
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
